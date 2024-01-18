@@ -81,6 +81,19 @@ The Ansible playbook includes tasks for installing and configuring the following
 - **Troubleshooting:**
   - Check logs for each service (`/var/log/` or as specified in service configurations).
   - Ensure correct permissions and ownership for deployed files and directories.
+ 
+# CI/CD with Jenkins
+  This repository contains a Jenkins pipeline for running the CI/CD of a Node.js microservice
+
+## Prerequisites
+
+Ensure you have the following prerequisites before starting the CI/CD:
+- Java installed on machine.
+- Target servers accessible via SSH.
+
+## Jenkins Pipeline Overview
+
+The Jenkins pipeline includes stages that entails the environment, checkout stage, build stage and the deployment stage
 
 ## Conclusion
 
