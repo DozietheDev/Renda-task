@@ -113,16 +113,21 @@ GitHub:
  I could also set up a webhook in your GitHub repository to trigger the Jenkins job on code pushes.
 
 
+
 # Using Terraform for the Iac
 
 ## Define the Provider:
 I specified the provider for our infrastructure in the 'main.tf' file where I stated the region
 
 ## Define the Security Group:
-I specified the provider's security group for our infrastructure in the 'main.tf' file where I stated the name, description, and ingress
+I specified the provider's security group for our infrastructure in the 'main.tf' file where I stated the name, description, and ingress( which contains 'from_port', 'to_port', 'protocol', 'cidr_blocks'
 
 ## Define the Instance:
-I specified the provider's instance for our infrastructure in the 'main.tf' file where I stated the ami, instance_type, key_name, and user_data
+I specified the provider's instance for our infrastructure in the 'main.tf' file where I stated the ami, instance_type, key_name, user_data, and tag.
+
+
+
+Add MONGO_URL as an environment variable
 
 ## Conclusion
 
