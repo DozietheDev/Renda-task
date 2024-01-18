@@ -1,3 +1,5 @@
+Add MONGO_URL as an environment variable
+
 # Node.js Microservice Deployment with Monitoring
 
 This repository contains an Ansible playbook for deploying a Node.js microservice with MongoDB, Prometheus, and Grafana. The deployment is designed to work on both RPM and Debian-based servers.
@@ -126,8 +128,6 @@ I specified the provider's security group for our infrastructure in the 'main.tf
 I specified the provider's instance for our infrastructure in the 'main.tf' file where I stated the ami, instance_type, key_name, user_data, and tag.
 
 
-
-Add MONGO_URL as an environment variable
 
 ## Conclusion
 
