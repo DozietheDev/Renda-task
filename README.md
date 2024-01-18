@@ -81,19 +81,41 @@ The Ansible playbook includes tasks for installing and configuring the following
 - **Troubleshooting:**
   - Check logs for each service (`/var/log/` or as specified in service configurations).
   - Ensure correct permissions and ownership for deployed files and directories.
- 
+
+
+
 # CI/CD with Jenkins
   This repository contains a Jenkins pipeline for running the CI/CD of a Node.js microservice
 
 ## Prerequisites
 
 Ensure you have the following prerequisites before starting the CI/CD:
-- Java installed on machine.
-- Target servers accessible via SSH.
+- Ensure Jenkins is installed and running.
+- Install necessary plugins (e.g., NodeJS Plugin, GitHub Plugin).
+- Have a GitHub repository for your Node.js microservice.
 
 ## Jenkins Pipeline Overview
 
+Create a Jenkinsfile in the root of your Node.js microservice repository. This file will define the entire CI/CD pipeline.
 The Jenkins pipeline includes stages that entails the environment, checkout stage, build stage and the deployment stage
 
+## Configure Source Code Management:
+GitHub:
+
+- Choose "Git" under Source Code Management.
+- Provide your GitHub repository URL.
+- Add GitHub credentials
+
+## Stages:
+   Stages such as 'Checkout', 'Build', and 'Deployment' should contain steps script, configurations neccessary   
+
+## GitHub Integration:
+ I could also set up a webhook in your GitHub repository to trigger the Jenkins job on code pushes.
+
+
+# Using Terraform for the Iac
+
+## Define the Provider:
+I specified the provider for our infrastructure in the 'main.tf' file
 ## Conclusion
 
