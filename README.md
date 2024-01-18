@@ -116,6 +116,13 @@ GitHub:
 # Using Terraform for the Iac
 
 ## Define the Provider:
-I specified the provider for our infrastructure in the 'main.tf' file
+I specified the provider for our infrastructure in the 'main.tf' file where I stated the region
+
+## Define the Security Group:
+I specified the provider's security group for our infrastructure in the 'main.tf' file where I stated the name, description, and ingress
+
+## Define the Instance:
+I specified the provider's instance for our infrastructure in the 'main.tf' file where I stated the ami, instance_type, key_name, and user_data
+
 ## Conclusion
 
